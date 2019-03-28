@@ -76,13 +76,10 @@
       </div>
       <ul class="app-menu">
 
-        <li><a class="app-menu__item {{(Request::is('superadmin'))? 'active': ''}}" href="{{route('superadmin.home')}}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
+        <li><a class="app-menu__item {{(Request::is('admin'))? 'active': ''}}" href="{{route('admin.home')}}"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
 
-        <li><a class="app-menu__item {{(Request::is('superadmin/kurikulum') OR \Request::is('superadmin/kurikulum/*'))? 'active': ''}}" href="{{route('superadmin.kurikulum.home')}}"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Kurikulum</span></a></li>
+        <li><a class="app-menu__item {{(Request::is('admin/ta') OR \Request::is('admin/ta/*'))? 'active': ''}}" href="{{route('superadmin.ta.home')}}"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Tahun Ajaran Aktif</span></a></li>
 
-        <li><a class="app-menu__item {{(Request::is('superadmin/ta') OR \Request::is('superadmin/ta/*'))? 'active': ''}}" href="{{route('superadmin.ta.home')}}"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Tahun Ajaran</span></a></li>
-
-        <li><a class="app-menu__item {{(Request::is('superadmin/admin') OR \Request::is('superadmin/admin/*'))? 'active': ''}}" href="{{route('superadmin.admin')}}"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Admin</span></a></li>
 
       </ul>
     </aside>

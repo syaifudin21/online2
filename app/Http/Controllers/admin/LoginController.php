@@ -19,12 +19,12 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $this->validate($request, [
-            'email' => 'required|email',
-            'password' => 'required|min:6'
+            'username' => 'required',
+            'password' => 'required|min:4'
         ]);
 
         $credential = [
-            'email' => $request->email,
+            'username' => $request->username,
             'password' => $request->password
         ];
 

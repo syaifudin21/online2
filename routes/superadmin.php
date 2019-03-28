@@ -71,6 +71,14 @@ Route::get('/siswa/edit/{id}', 'superadmin\SiswaController@edit')->name('superad
 Route::put('/siswa/update', 'superadmin\SiswaController@update')->name('superadmin.siswa.update');
 Route::delete('/siswa/delete/{id}', 'superadmin\SiswaController@delete')->name('superadmin.siswa.delete');
 
+Route::get('/admin', 'superadmin\AdminController@index')->name('superadmin.admin');
+Route::get('/admin/tambah', 'superadmin\AdminController@create')->name('superadmin.admin.create');
+Route::post('/admin', 'superadmin\AdminController@store')->name('superadmin.admin.store');
+Route::get('/admin/{id}', 'superadmin\AdminController@show')->name('superadmin.admin.show');
+Route::get('/admin/edit/{id}', 'superadmin\AdminController@edit')->name('superadmin.admin.edit');
+Route::put('/admin/update', 'superadmin\AdminController@update')->name('superadmin.admin.update');
+Route::delete('/admin/delete/{id}', 'superadmin\AdminController@delete')->name('superadmin.admin.delete');
+
 Route::get('/ruangkelas/tambah/{id_ta}', 'superadmin\RuangKelasController@create')->name('superadmin.rk.create');
 Route::post('/ruangkelas/tambah', 'superadmin\RuangKelasController@store')->name('superadmin.rk.store');
 Route::get('/ruangkelas/edit/{id}', 'superadmin\RuangKelasController@edit')->name('superadmin.rk.edit');

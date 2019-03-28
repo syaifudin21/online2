@@ -32,3 +32,5 @@ Route::group(['prefix' => 'api'] , function() {
         Route::get('/user', 'ApiController@getUser');
     });
 });
+
+Route::get('events', 'AgendaController@index');

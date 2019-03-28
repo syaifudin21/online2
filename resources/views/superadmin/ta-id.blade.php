@@ -146,10 +146,9 @@
                         <hr style="margin: 10px">
                         <div class="row">
                                 <div class="col-sm-12 btn-group float-right btn-group-sm">
-                                        <a class="btn btn-secondary" href="{{route('superadmin.ta.tempatkan',['id'=>$ta->id])}}">Tempatkan Siswa Siswa</a>
-                                        <a class="btn btn-secondary" href="{{route('superadmin.ta.tempatkan',['id'=>$ta->id])}}">Tempatkan Siswa Telat Masuk Tahun Pertama</a>
-                                        <a class="btn btn-secondary" href="{{route('superadmin.ta.tempatkan',['id'=>$ta->id])}}" disabled>Tempatkan Siswa Transfer Nilai</a>
-
+                                        <a class="btn btn-default" href="{{route('superadmin.ta.tempatkan',['id'=>$ta->id])}}">Tempatkan Siswa Siswa</a>
+                                        <a class="btn btn-default" href="{{route('superadmin.ta.tempatkan',['id'=>$ta->id])}}">Tempatkan Siswa Telat Masuk Tahun Pertama</a>
+                                        <a class="btn btn-default" href="{{route('superadmin.ta.tempatkan',['id'=>$ta->id])}}">Tempatkan Siswa Transfer Nilai</a>
 
                                 </div>
                         </div>
@@ -197,6 +196,12 @@
                     <button type="button" class="btn btn-outline-danger btn-sm float-right" id="hapus" data-url="{{route('superadmin.ta.delete', ['id'=>$ta->id])}}"
                             data-redirect="{{ route('superadmin.ta.home')}}" data-pesan="Apakah anda yakin ingin menghapus {{$ta->tahun_ajaran}}"><i class="fa fa-exclamation-triangle"></i>Hapus</button>
 
+                </div>
+            </div>
+            <div class="widget-small primary coloured-icon"><i class="icon fa fa-calendar  fa-3x"></i>
+                <div class="info">
+                <h4>Agenda</h4>
+                <p>Atur Agenda Kegiatan Sekolah disini</p>
                 </div>
             </div>
 

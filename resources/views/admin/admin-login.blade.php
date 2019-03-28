@@ -14,7 +14,7 @@
 @section('content')
 
 <div class="flex-center full-height">
-    
+
 
     <div class="content">
         <center>
@@ -62,7 +62,7 @@
         <a href="{{url('admin')}}" class="btn btn-light btn-sm">Login Sebagai Admin</a>
         <a href="{{url('lgoin')}}" class="btn btn-light btn-sm">Login Siswa / Guru</a>
         </form>
-        
+
         </center>
     </div>
 </div>

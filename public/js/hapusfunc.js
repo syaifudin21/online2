@@ -1,4 +1,5 @@
 function hapus(action, pesan = 'Item akan dihapus') {
+    console.log('has');
     swal({
             title: "Apakah Kamu Yakin?",
             text: pesan,

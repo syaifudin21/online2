@@ -65,7 +65,7 @@
 				<div class="row">
 				  <div class="col-md-8 col-md-offset-3">
 					<button class="btn btn-primary" onclick="event.preventDefault(); document.getElementById('submit-form').submit();"><i class="fa fa-fw fa-lg fa-check-circle"></i>Tambah</button>
-					<a class="btn btn-secondary" href="{{route('superadmin.bab.home',['id_mapel'=>$mapel->id])}}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Batal</a>
+					<a class="btn btn-secondary" href="{{url()->previous()}}"><i class="fa fa-fw fa-lg fa-times-circle"></i>Batal</a>
 				  </div>
 				</div>
 			  </div>
